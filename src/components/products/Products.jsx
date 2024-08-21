@@ -10,7 +10,7 @@ const Products = ({ data, title }) => {
     <div className="border p-3 mb-7 relative" key={product.id}>
       <div className="w-full h-60 bg-gray-200 rounded-lg">
         <img
-          className="w-full h-full object-contain duration-300 hover:scale-105"
+          className="w-full h-full object-contain duration-300 hover:scale-110"
           src={product.images[0]}
           alt="Photo"
         />
@@ -47,7 +47,7 @@ const Products = ({ data, title }) => {
   return (
     <div className="container mx-auto px-8">
       <h3 className="text-2xl font-bold mb-3">{title}</h3>
-      <div className="grid grid-cols-4 gap-2">{items}</div>
+      <div className=" grid gap-2 grid-cols-1  sm:grid-cols-1 md:grid-cols-1  lg:grid-cols-4 mb-11">{items}</div>
     </div>
   );
 };
