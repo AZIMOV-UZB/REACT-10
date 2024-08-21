@@ -15,8 +15,8 @@ const Header = () => {
         <div className="h-full flex gap-8 items-center nav__bag  text-xl font-bold mx-auto px-8">
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/wishlist"}>Wishlist</NavLink>
-        <NavLink to={"/login"}>Login</NavLink>
         <NavLink to={"/Cart"}>Cart</NavLink>
+        <NavLink to={"/login"}>Login</NavLink>
         </div>
         <div className="menu">
         <TiThMenu  className="text-3xl"/>
