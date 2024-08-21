@@ -6,6 +6,7 @@ import Layotu from "@/pages/layout/Layout";
 import Cart from "./pages/cart/Cart";
 import {ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NotFound from "./pages/not-found/NotFound";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="*" element={<NotFound/>}></Route>
         </Route>
         <Route path="/login" element={<Login />} />
       </Routes>
