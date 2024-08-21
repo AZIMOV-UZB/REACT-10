@@ -7,6 +7,7 @@ import Cart from "./pages/cart/Cart";
 import {ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFound from "./pages/not-found/NotFound";
+
 function App() {
   return (
     <>
