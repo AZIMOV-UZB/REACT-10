@@ -15,7 +15,7 @@ const Products = ({ data, title }) => {
           alt="Photo"
         />
       </div>
-      <div className="flex flex-col  flex-wrap	gap-2">
+      <div className="flex flex-col  	gap-2">
         <p>{product.title}</p>
         <strong>{product.price} USD</strong>
         <div className="absolute top-[20px] left-[20px]">
@@ -45,7 +45,7 @@ const Products = ({ data, title }) => {
     </div>
   ));
   return (
-    <div className="container mx-auto px-10">
+    <div className="container mx-auto px-8">
       <h3 className="text-2xl font-bold mb-3">{title}</h3>
       <div className="grid grid-cols-4 gap-2">{items}</div>
     </div>

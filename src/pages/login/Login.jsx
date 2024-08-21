@@ -26,7 +26,7 @@ const mainLogin = () => {
               placeholder="password"
             />
             <button
-              onClick={() => navigate(`/Admin`)}
+              onClick={() => navigate(`/`)}
               className="w-full border-none bg-[#ff8a1e] text-[#fff] cursor-pointr pl-2 py-[7px] rounded-full shadow-sm outline-none"
             >
               {" "}
