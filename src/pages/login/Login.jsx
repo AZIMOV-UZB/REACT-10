@@ -39,7 +39,7 @@ const mainLogin = () => {
               Orqaga
             </button>
             <p className="font-[600] text-center">
-              Biz ijtimoiy tarmoqlardamiz!
+              Siz bizning obunachimizga aylanasiz !
             </p>
           </form>
         </div>
