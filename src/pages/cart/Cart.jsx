@@ -3,12 +3,12 @@ import { useStateValue } from "@/context/Index";
 import React from "react";
 
 const Cart = () => {
-  let [data, dispatch] = useStateValue();
+  let [data,_] = useStateValue();
   console.log(data.cart);
 
   return (
     <div>
-      <Newcart title={"CART"} data={data.cart} />
+      <Newcart  title={"CART"} data={data.cart} />
     </div>
   );
 };

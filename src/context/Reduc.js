@@ -9,7 +9,10 @@ export const reducer = (state, action) => {
     case "INC":
       return { ...state, son: state.son + 1 };
     case "ADD_TO_WISHLIST":
-      return { ...state, wishlist: [...state.wishlist, action.payload] };
+      let index = state.wishlist.findIndex(item=>item.id === action.payload.id)
+      if(index < 0){
+      return { ...state, wishlist: [...state.wishlist, action.payload] }
+    };
     case "CART":
       return {
         ...state,

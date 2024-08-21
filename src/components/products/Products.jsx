@@ -15,7 +15,7 @@ const Products = ({ data, title }) => {
           alt="Photo"
         />
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col  flex-wrap	gap-2">
         <p>{product.title}</p>
         <strong>{product.price} USD</strong>
         <div className="absolute top-[20px] left-[20px]">
@@ -23,7 +23,8 @@ const Products = ({ data, title }) => {
             <FaHeart
               onClick={() => {
                 dispatch({ type: "ADD_TO_WISHLIST", payload: product });
-                toast.success("Mahsulot  qo'shildi ");
+                toast.success("Mahsulot  qo'shildi", {position: "bottom-right"
+                });
               }}
               className="text-20px hover:text-red-900"
             />
@@ -34,7 +35,8 @@ const Products = ({ data, title }) => {
           onClick={() => {
             navigate(`/Cart`);
             dispatch({ type: "CART", payload: product });
-            toast.success("Tanlangan maxsulot qoshildi");
+            toast.success("Maxsulot qoshildi", {position: "bottom-right"
+            });
           }}
         >
           add cart

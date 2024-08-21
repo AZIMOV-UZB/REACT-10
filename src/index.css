@@ -22,10 +22,24 @@
     -webkit-mask-composite: destination-in;
     mask-composite: intersect;
     animation: l5 1s infinite;
+   
 }
 
+.menu{
+    display: none;
+}
 @keyframes l5 {
     to {
         transform: rotate(.5turn)
+    }
+}
+
+@media ( max-width:910px){
+    .nav__bag{
+      display: none;
+    }
+  
+    .menu{
+        display: block;
     }
 }
