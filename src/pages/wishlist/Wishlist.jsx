@@ -8,7 +8,7 @@ const Wishlist = () => {
 
   return (
     <div>
-      <Products  title={"Wishlist"} data={data.wishlist} />
+      <Products title={"Wishlist"} data={data.wishlist} />
     </div>
   );
 };

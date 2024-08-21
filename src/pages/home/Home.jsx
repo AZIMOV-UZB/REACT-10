@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <h2 className="text-center text-4xl font-bold py-5">Home</h2>
-      <Products title={"New products"} data={data?.products} />
+      <Products  title={"New products"} data={data?.products} />
       {loading && <div className="loader m-auto"></div>}
     </div>
   );

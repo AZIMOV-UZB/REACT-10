@@ -22,7 +22,7 @@ const Footer = () => {
   ];
   return (
     <div className="bg-slate-100 pt-16 pb-10">
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto px-8 flex:wrap">
         <div className="flex flex-col md:flex-row gap-12 footer">
           <ul className="footer__collection w-full md:w-1/4 leading-normal flex flex-col gap-3 text3">
             <p className="text-xl font-semibold">Информация</p>

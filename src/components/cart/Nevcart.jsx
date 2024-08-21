@@ -5,7 +5,7 @@ const Newcart = ({ data, title }) => {
   const [_, dispatch] = useStateValue();
   let items = data?.map((product) => (
     <div
-      className="border w-full p-3 mb-7 flex  gap-11 items-center relative"
+      className="border w-full p-3 mb-7 flex  flex-wrap  gap-11 items-center relative"
       key={product.id}
     >
       <div className="w-[350px]  h-60  rounded-lg">
