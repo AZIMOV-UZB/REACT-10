@@ -10,7 +10,7 @@ const mainLogin = () => {
         </p>
         <div className="w-[350px] h-[350px] border shadow m-auto p-4 mb-10 ">
           <form className="flex flex-col gap-5" action="">
-            <p className="font-medium text-center text-[#198f51] mb-3">
+            <p className="font-medium text-center text-green-500	 text-xl mb-3">
    
               Shaxsiy Hisob
             </p>
