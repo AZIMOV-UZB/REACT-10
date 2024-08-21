@@ -18,7 +18,7 @@ const Products = ({ data, title }) => {
       <div className="flex flex-col  	gap-2">
         <p>{product.title}</p>
         <strong>{product.price} USD</strong>
-        <div className="absolute top-[20px] left-[20px]">
+        <div className="absolute top-[20px] right-[20px] text-2xl text-white">
           <button>
             <FaHeart
               onClick={() => {
@@ -26,7 +26,7 @@ const Products = ({ data, title }) => {
                 toast.success("Mahsulot  qo'shildi", {position: "bottom-right"
                 });
               }}
-              className="text-20px hover:text-red-900"
+              className="text-50px hover:text-red-600"
             />
           </button>
         </div>
