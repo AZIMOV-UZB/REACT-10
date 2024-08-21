@@ -5,7 +5,7 @@ import Products from "@/components/products/Products";
 import { useFetch } from "@/hooks/useFetch";
 
 const Home = () => {
-  const { data, loading } = useFetch("/products", { limit: 8 });
+  const { data, loading } = useFetch("/products", { limit: 16 });
 
   return (
     <div>
