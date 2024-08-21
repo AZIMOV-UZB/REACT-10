@@ -34,19 +34,19 @@ const Newcart = ({ data, title }) => {
       </div>
       <div className="flex flex-col gap-3">
         <button
-          className="border py-1 w-[140px] font-[500]"
+          className="border py-1 w-[140px] bg-lime-500	 font-[700]"
           onClick={() => dispatch({ type: "CART", payload: product })}
         >
           Add cart
         </button>
-        <button className=" py-1 w-[140px] font-[500] text-red-500">
+        <button className=" py-1 w-[140px] font-[700] bg-red-700	 text-white">
           Delete
         </button>
       </div>
     </div>
   ));
   return (
-    <div className="container mx-auto px-10">
+    <div className="container mx-auto px-8">
       <h3 className="text-2xl font-bold mb-3">{title}</h3>
       <div className="grid grid-cols-1 gap-2">{items}</div>
     </div>

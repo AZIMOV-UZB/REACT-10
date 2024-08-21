@@ -31,7 +31,7 @@ const Products = ({ data, title }) => {
           </button>
         </div>
         <button
-          className="border bg-lime-600 py-1 text-[#fff] "
+          className="border bg-lime-700 py-1 text-[#fff] "
           onClick={() => {
             navigate(`/Cart`);
             dispatch({ type: "CART", payload: product });
