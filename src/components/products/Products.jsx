@@ -8,14 +8,14 @@ const Products = ({ data, title }) => {
   const [_, dispatch] = useStateValue();
   let items = data?.map((product) => (
     <div className="border p-3 mb-7 relative" key={product.id}>
-      <div className="w-full h-60 bg-gray-200 rounded-lg">
+      <div className="w-full h-64 py-4 bg-gray-200 rounded-lg">
         <img
           className="w-full h-full object-contain duration-300 hover:scale-110"
           src={product.images[0]}
           alt="Photo"
         />
       </div>
-      <div className="flex flex-col  	gap-2">
+      <div className="flex flex-col my-2  	gap-2">
         <p>{product.title}</p>
         <strong>{product.price} USD</strong>
         <div className="absolute top-[20px] right-[20px] text-2xl text-white">
